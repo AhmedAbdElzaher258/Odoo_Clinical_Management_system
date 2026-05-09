@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="clinical_patient_view_tree" model="ir.ui.view">
+        <field name="name">clinical.patient.view.tree</field>
+        <field name="model">clinical.patient</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                 <field name="patient_code"/>
+                <field name="name"/>
+                <field name="age"/>
+                <field name="phone"/>
+                <field name="gender"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="clinical_patient_view_form" model="ir.ui.view">
+        <field name="name">clinical_patient.view.form</field>
+        <field name="model">clinical.patient</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    
+                    <group>
+                        <field name="patient_code" />
+                        <field name="name" />
+                        <field name="date_of_birth" />
+                        <field name="age" readonly="True" />
+                        <field name="gender" />
+                        <field name="phone" />
+                        <field name="email" />
+                        <field name="address" />
+                        <field name="blood_type" />
+                    </group>
+                    <notebook>
+                       <!--<page string="Appointments">
+                               <field name="appointment_ids" />
+                        </page>-->
+                  
+                     
+                     <page  string="Medical Notes">
+                          <field name="notes" />
+                     </page>
+                      
+                      </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="clinical_action" model="ir.actions.act_window">
+    <field name="name">clinical_action</field>
+    <field name="res_model">clinical.patient</field>
+   </record>
+
+        <menuitem
+        id="clinical_management_menu_item"
+        name="Clinical Management"
+        parent="clinical_menu"
+        action="clinical_action"
+        />
+
+</odoo>
