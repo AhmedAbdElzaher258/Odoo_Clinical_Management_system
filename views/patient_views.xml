@@ -46,12 +46,18 @@
                       
                       </notebook>
                 </sheet>
+                
+        <div class="oe_chatter">
+        <field name="message_follower_ids" />
+        <field name="activity_ids" />
+        <field name="message_ids" />
+       </div>
             </form>
         </field>
     </record>
 
-    <record id="clinical_action" model="ir.actions.act_window">
-    <field name="name">clinical_action</field>
+    <record id="clinical_patient_action" model="ir.actions.act_window">
+    <field name="name">clinical_patient_action</field>
     <field name="res_model">clinical.patient</field>
    </record>
 
@@ -59,7 +65,7 @@
         id="clinical_management_menu_item"
         name="Clinical Management"
         parent="clinical_menu"
-        action="clinical_action"
+        action="clinical_patient_action"
         />
 
 </odoo>

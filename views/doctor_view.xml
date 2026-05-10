@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="doctor_clinical_view_tree" model="ir.ui.view">
+        <field name="name">doctor.clinical.view.tree</field>
+        <field name="model">doctor.clinical</field>
+        <field name="arch" type="xml">
+            <tree >
+                <field name="name" />
+                <field name="specialty" />
+                <field name="phone" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="doctor_clinical_view_form" model="ir.ui.view">
+        <field name="name">doctor.clnical.view.form</field>
+        <field name="model">doctor.clinical</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+               <field name="image" widget="image" class="oe_avatar"/>
+                    <group>
+                        <field name="name"/>
+                        <field name="specialty"/>
+                        <field name="phone"/>
+                        <field name="resource_calendar_id"/>
+                    </group>
+                    <notebook>
+                        <page string="Biography">
+                            <field name="bio"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="doctor_clinical_action" model="ir.actions.act_window">
+        <field name="name">doctor_clinical_action</field>
+        <field name="res_model">doctor.clinical</field>
+    </record>
+
+        <menuitem
+        id="doctor_menu_item"
+        name="doctor"
+        parent="clinical_menu"
+        action="doctor_clinical_action"
+        />
+
+</odoo>

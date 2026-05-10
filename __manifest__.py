@@ -11,7 +11,8 @@
         'security/ir.model.access.csv',
         'data/sequence_view.xml',
         'views/base_menu.xml',
-        'views/patient_views.xml'
+        'views/patient_views.xml',
+        'views/doctor_view.xml'
         
 
     ],
