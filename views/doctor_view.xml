@@ -48,9 +48,10 @@
 
         <menuitem
         id="doctor_menu_item"
-        name="doctor"
+        name="doctors"
         parent="clinical_menu"
         action="doctor_clinical_action"
+        sequence="10"
         />
 
 </odoo>

@@ -12,7 +12,8 @@
         'data/sequence_view.xml',
         'views/base_menu.xml',
         'views/patient_views.xml',
-        'views/doctor_view.xml'
+        'views/doctor_view.xml',
+        'views/appointment_views.xml'
         
 
     ],
