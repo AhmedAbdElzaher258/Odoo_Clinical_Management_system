@@ -2,4 +2,5 @@ id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 access_clinical_patient,access_clinical_patient,model_clinical_patient,,1,1,1,1
 access_doctor_clinical,access_doctor_clinical,model_doctor_clinical,,1,1,1,1
 access_clinical_appointment,access_clinical_appointment,model_clinical_appointment,,1,1,1,1
+access_medical_record,access_medical_record,model_medical_record,,1,1,1,1
 

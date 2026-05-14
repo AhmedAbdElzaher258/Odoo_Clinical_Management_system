@@ -8,7 +8,13 @@ class DoctorClinical(models.Model):
 
     name=fields.Char(string="Doctor Name",required=True)
 
-    specialty=fields.Char(string="Specialty",required=True)
+    specialty=fields.Selection([
+        ('internal_medicine','Internal Medicine'),
+        ('general_practice','General Practice'),
+        ('cardiology','Cardiology'),
+        ('dermatology','Dermatology')
+
+    ],string="Specialty",required=True,default='internal_medicine')
 
     resource_calendar_id = fields.Many2one('resource.calendar', string='Working Schedule')
     phone=fields.Char(string="Phone Number")

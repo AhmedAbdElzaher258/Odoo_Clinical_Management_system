@@ -62,7 +62,7 @@
    </record>
 
         <menuitem
-        id="clinical_management_menu_item"
+        id="patients_menu_item"
         name="patients"
         parent="clinical_menu"
         action="clinical_patient_action"

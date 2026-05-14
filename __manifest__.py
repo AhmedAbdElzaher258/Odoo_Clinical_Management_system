@@ -13,7 +13,8 @@
         'views/base_menu.xml',
         'views/patient_views.xml',
         'views/doctor_view.xml',
-        'views/appointment_views.xml'
+        'views/appointment_views.xml',
+        'views/medical_record_views.xml'
         
 
     ],

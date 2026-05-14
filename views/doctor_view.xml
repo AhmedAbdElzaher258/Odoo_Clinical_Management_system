@@ -41,17 +41,17 @@
         </field>
     </record>
 
-    <record id="doctor_clinical_action" model="ir.actions.act_window">
-        <field name="name">doctor_clinical_action</field>
-        <field name="res_model">doctor.clinical</field>
-    </record>
+    <record id="clinical_doctor_action" model="ir.actions.act_window">
+    <field name="name">clinical_doctor_action</field>
+    <field name="res_model">doctor.clinical</field>
+   </record>
 
         <menuitem
-        id="doctor_menu_item"
+        id="doctors_menu_item"
         name="doctors"
         parent="clinical_menu"
-        action="doctor_clinical_action"
-        sequence="10"
+        action="clinical_doctor_action"
         />
+
 
 </odoo>

@@ -50,7 +50,7 @@
     </record>
 
         <menuitem
-        id="doctor_menu_item"
+        id="appointments_menu_item"
         name="Appointments"
         parent="clinical_menu"
         action="clinical_appointment_action"
