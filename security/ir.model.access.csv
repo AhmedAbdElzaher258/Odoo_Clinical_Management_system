@@ -3,4 +3,6 @@ access_clinical_patient,access_clinical_patient,model_clinical_patient,,1,1,1,1
 access_doctor_clinical,access_doctor_clinical,model_doctor_clinical,,1,1,1,1
 access_clinical_appointment,access_clinical_appointment,model_clinical_appointment,,1,1,1,1
 access_medical_record,access_medical_record,model_medical_record,,1,1,1,1
+access_clinical_pharmacy,access_clinical_pharmacy,model_clinical_pharmacy,,1,1,1,1
+
 

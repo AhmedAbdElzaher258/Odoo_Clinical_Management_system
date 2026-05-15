@@ -14,7 +14,8 @@
         'views/patient_views.xml',
         'views/doctor_view.xml',
         'views/appointment_views.xml',
-        'views/medical_record_views.xml'
+        'views/medical_record_views.xml',
+        'views/Pharmacy_views.xml'
         
 
     ],
